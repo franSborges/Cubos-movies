@@ -1,0 +1,32 @@
+.headerCubosMovie {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 25px;
+    border-bottom: 1px solid #12111380;
+    background: #12111380;
+}
+
+.iconsContent {
+    display: flex;
+    gap: 10px;
+}
+
+.logoutButton {
+    font-family: var(---font-roboto);
+    font-weight: 400;
+    font-size: 16px;
+    text-align: center;
+
+    background-color: #8E4EC6;
+    border-radius: 2px;
+    border: transparent;
+    padding: 12px 20px;
+}
+
+
+@media (max-width: 414px) {
+  .cubosLogo {
+   width: 100px;
+  }
+}
