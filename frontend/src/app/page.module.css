@@ -1,0 +1,55 @@
+.page {
+  display: flex;
+  min-height: 100vh;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-geist-sans);
+  background-color: #12111380;
+}
+
+.main {
+  display: flex;
+  min-height: 100vh;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  background-color: #12111380;
+}
+
+.main :global(img) {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 0;
+}
+
+.main::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.35);
+  z-index: 1;
+  pointer-events: none;
+}
+
+main::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(to bottom, rgba(0,0,0,0.65), rgba(0,0,0,0.25), transparent 60%),
+    linear-gradient(to top,    rgba(0,0,0,0.65), rgba(0,0,0,0.25), transparent 70%);
+  z-index: 2;
+  pointer-events: none;
+}
+
+.loginContent {
+   position: relative;
+   z-index: 3;
+   width: 412px;
+   max-width: 520px;
+   padding: 16px;
+   background-color: #232225;
+}
