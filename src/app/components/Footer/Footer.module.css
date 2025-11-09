@@ -1,0 +1,15 @@
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 24px;
+    background-color: #12111380;
+    border-top: 1px solid #F1E6FD30;
+}
+
+
+.allRightsReservedText {
+    font-size: 16px;
+    font-family: var(--font-montserrat);
+    color: #B5B2BC;
+}

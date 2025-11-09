@@ -1,13 +1,21 @@
-
+import Image from "next/image";
 import styles from "./page.module.css";
+import backgroundImage from "./../../public/loginBackground.svg"
+import LoginModal from "./components/LoginModal/Modal";
 
-
-export default function Home() {
+const LoginPage = () => {
   return (
-    <div className={styles.page}>
       <main className={styles.main}>
-        Hello World.
+        <Image
+          src={backgroundImage}
+          alt="Imagem de background"
+        />
+        <div className={styles.loginContent}>
+         <LoginModal />
+        </div>
       </main>
-    </div>
   );
 }
+
+
+export default LoginPage;
