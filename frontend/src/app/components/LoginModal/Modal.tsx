@@ -1,18 +1,27 @@
 "use client";
+import React, { useState } from "react";
 import styles from "./Modal.module.css"
 
 const LoginModal = () => {
+  const [login, setLogin] = useState("");
+  const [password, setPassword] = useState("");
+
+  const handleSubmit = (e: React.FormEvent) => {
+    e.preventDefault();
+    console.log({login, password});
+  }
 
   return (
     <div className={styles.formContent}>
-      <form className={styles.form}>
+      <form className={styles.form} onSubmit={handleSubmit}>
         <div className={styles.formLabel}>
           <label className={styles.label} htmlFor="login">Nome/E-mail</label>
           <input
             type="email"
             placeholder="Digite seu nome/E-mail"
             id="login"
-            value=""
+            value={login}
+            onChange={(e) => setLogin(e.target.value)}
             required
             className={styles.inputPlaceHolder}
           />
@@ -21,13 +30,12 @@ const LoginModal = () => {
             type="password"
             placeholder="Digite a sua senha"
             id="password"
-            value=""
+            value={password}
+            onChange={(e) => setPassword(e.target.value)}
             required
-            
             className={styles.inputPlaceHolder}
           />
         </div>
-
         <div className={styles.buttonContent}>
           <a className={styles.link} href="/#" target="_blank" rel="noopener noreferrer">Esqueci minha senha</a>
           <button
@@ -37,7 +45,6 @@ const LoginModal = () => {
             Entrar
           </button>
         </div>
-
       </form>
     </div>
   );
