@@ -1,7 +1,7 @@
 import Image from "next/image";
 import styles from "./page.module.css";
-import backgroundImage from "./../../public/loginBackground.svg"
-import LoginModal from "./components/LoginModal/Modal";
+import backgroundImage from "./../../../public/loginBackground.svg"
+import LoginModal from "../components/LoginModal/Modal";
 
 const LoginPage = () => {
   return (
