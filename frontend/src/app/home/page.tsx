@@ -1,9 +1,10 @@
 import Image from "next/image";
 import styles from "./page.module.css";
-import searchIcon from "./../../../public/searchIcon.svg"
+import searchIcon from "./../../../public/searchIcon.svg";
 
 const HomePage = () => {
   return (
+    
     <section className={styles.contentContainer}>
       <section className={styles.movieToolbarContainer}>
         <form role="search" className={styles.movieToolbar}>
