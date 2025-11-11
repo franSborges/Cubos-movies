@@ -8,5 +8,4 @@ O que foi implementado
 
  
 Motivo de não finalização
-- Encontrei limitações de tempo e tentei priorizar as paginas importantes
-
+- Limitação de tempo.
