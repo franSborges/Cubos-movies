@@ -1,7 +1,43 @@
 
-# 🎬 Cubos Movies Backend API
+# 🎬 Aplicação Cubos Movies
+### Gerenciamento de filmes.
 
-Backend em **Express.js** com **TypeScript** para gerenciamento de filmes.
+## Frontend **React.js**  **Next.js** com **TypeScript** 
+
+## 🚀 Tecnologias
+
+- **React.js**
+- **TypeScript**
+- **Next.js**
+
+## 📋 Funcionalidades
+
+### Requisitos das Páginas:
+- ✅ Página de Login(Estrutura)
+- ✅ Página de Cadastro(Estrutura)
+- ✅ Página de Listagem de Filmes(Estrutura)
+
+### 1. Clone o repositório
+ 
+```bash
+cd Cubos-movies/frontend
+```
+
+### 2. Instale as dependências
+```bash
+yarn add
+```
+
+
+### 3. Rode o projeto
+```bash
+yarn dev
+```
+
+O projeto estará rodando em: **http://localhost:3000**
+
+
+## Backend em **Express.js** com **TypeScript** 
 
 ## 🚀 Tecnologias
 
@@ -30,7 +66,7 @@ Backend em **Express.js** com **TypeScript** para gerenciamento de filmes.
 
 ### 1. Clone o repositório
 ```bash
-cd Cubos-movies
+cd Cubos-movies/backend
 ```
 
 ### 2. Instale as dependências
