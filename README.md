@@ -60,7 +60,7 @@ JWT_EXPIRES_IN="1d"
 # Inicie o PostgreSQL com Docker
 # Rode o comando abaixo no caminho do projeto que contém o arquivo docker-compose.yml(docker desktop)
 
-docker-compose up -d
+docker compose up -d
 
 ```
 
