@@ -154,9 +154,19 @@ POST /api/auth/signup
 Content-Type: application/json
 
 {
-  "name": "João Silva",
-  "email": "joao@example.com",
+  "name": "Jon Silva",
+  "email": "jon@example.com",
   "password": "senha123",
+}
+
+Response:
+{
+	"user": {
+		"id": "a66de7c6-9f60-4ec4-b501-f5fa9612674e",
+		"name": "Jon Silva",
+		"email": "Jon@example.com"
+	},
+	"token": "eyJhbGciOi..."
 }
 ```
 
@@ -166,15 +176,19 @@ POST /api/auth/login
 Content-Type: application/json
 
 {
-  "email": "joao@example.com",
-  "password": "senha123"
+"name": "Jon Silva",
+"email": "Jon@example.com",
+"password": "senhaSegura123"
 }
 
 Response:
 {
-  "message": "Login realizado com sucesso",
-  "user": { "id": "...", "name": "...", "email": "..." },
-  "token": "eyJhbGciOiJIUzI1..."
+	"user": {
+		"id": "a66de7c6-9f60-4ec4-b501-f5fa9612674e",
+		"name": "Jon",
+		"email": "Jon@example.com"
+	},
+	"token": "eyJhbGciOiJIU..."
 }
 ```
 
@@ -182,6 +196,16 @@ Response:
 ```http
 GET /api/auth/user
 Authorization: Bearer {token}
+
+Response:
+{
+	"user": {
+		"id": "a66de7c6-9f60-4ec4-b501-f5fa9612674e",
+		"name": "Jon Silva",
+		"email": "Jon@example.com"
+	}
+}
+
 ```
 
 
