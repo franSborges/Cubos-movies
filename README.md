@@ -34,7 +34,10 @@ yarn add
 yarn dev
 ```
 
-O projeto estará rodando em: **http://localhost:3000**
+O projeto estará rodando em: 
+**http://localhost:3000/home**
+**http://localhost:3000/signup**
+**http://localhost:3000/login**
 
 
 ## Backend em **Express.js** com **TypeScript** 
